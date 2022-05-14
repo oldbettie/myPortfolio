@@ -5,10 +5,34 @@ import Btn from "../components/Btn";
 import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Project from "../components/Project";
+import tictacdark from "../public/tictactoedark.png";
 
 export default function Home() {
 	const [lightMode, setLightMode] = useState("Dark");
 	const [classMode, setClassMode] = useState("light body");
+	const projects = {
+		tictactoe: {
+			website: "https://oldbettie.github.io/tictactoe/",
+			github: "https://github.com/oldbettie/tictactoe",
+			btn: "Tictactoe",
+			images: tictacdark,
+			about: "Simple tictactoe game using basic JS and jQuery with added light/dark mode button.",
+		},
+		cookBook: {
+			website: "https://jayleaton-cookbook.herokuapp.com/",
+			github: "https://github.com/oldbettie/cookbook",
+			btn: "Cookbook",
+			images: tictacdark,
+			about: "Recipe finder app utilizing RESTful best practices to build a CRUD app using Ruby on Rails, Heroku and Cloudinary ",
+		},
+		petPals: {
+			website: "https://project-2-5825e.web.app/",
+			github: "https://github.com/oldbettie/Project-2",
+			btn: "Petpals",
+			images: tictacdark,
+		},
+	};
 
 	function onBtnClick() {
 		if (lightMode === "Light") {
@@ -72,28 +96,15 @@ export default function Home() {
 				{/* start of main content */}
 				<div className={styles.mainContent}>
 					<div className={styles.projects}>
-						<div>
-							<a href="https://oldbettie.github.io/tictactoe/">
-								<Btn content="Project Zero" />
-							</a>
-						</div>
-						<div>
-							<a href="https://jayleaton-cookbook.herokuapp.com/">
-								<Btn content="Cook-Book" />
-							</a>
-						</div>
-						<div>
-							<a href="https://project-2-5825e.web.app/">
-								<Btn content="Pet-Pals" />
-							</a>
-						</div>
+						<Project content={projects.tictactoe} />
+						<Project content={projects.cookBook} />
+						<Project content={projects.petPals} />
 					</div>
 					<div className={styles.skills}></div>
 					<div className={styles.resume}></div>
 					<div className={styles.about}></div>
 				</div>
 				{/* end of main content */}
-				<p className={styles.createdBy}>Created with Next.js - 2022</p>
 			</div>
 		</div>
 	);
