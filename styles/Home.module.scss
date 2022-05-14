@@ -1,0 +1,59 @@
+$background: #07020d;
+$primary: #5db7de;
+$secondary: #f1e9db;
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerTitle {
+	margin: 10px 10px;
+}
+.lineBreak {
+	color: $primary;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.myLinks {
+	font-size: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	a {
+		padding: 5px 2px 0px 2px;
+	}
+}
+
+.mainContent {
+	min-height: 75vh;
+	border: 1px solid yellow;
+	overflow-y: scroll;
+}
+.projects {
+	div {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.createdBy {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	bottom: 10px;
+	font-size: 14px;
+}
+
+@media (max-width: 600px) {
+	.grid {
+		width: 100%;
+		flex-direction: column;
+	}
+}
