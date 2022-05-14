@@ -11,47 +11,55 @@ $secondary: #f1e9db;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-.headerTitle {
-	margin: 10px 10px;
+	.headerTitle {
+		margin: 10px 0px;
+	}
 }
 .lineBreak {
 	color: $primary;
 	max-width: 900px;
 	margin: 0 auto;
 }
-
-.myLinks {
-	font-size: 40px;
-	width: 100%;
+.subheader {
+	// padding: 0 2rem;
 	display: flex;
-	justify-content: flex-end;
-	a {
-		padding: 5px 2px 0px 2px;
+	flex-direction: row;
+	align-items: center;
+	font-size: 25px;
+	width: 100%;
+	justify-content: space-between;
+	.inPageJump {
+		display: flex;
+		flex-direction: row;
+	}
+	.myLinks {
+		font-size: 40px;
+
+		display: flex;
+		justify-content: flex-end;
+		a {
+			padding: 5px 0px 0px 0px;
+		}
 	}
 }
 
-.mainContent {
-	border: 1px solid yellow;
-}
 .projects {
 	display: flex;
-	flex-direction: column;
-
+	flex-wrap: wrap;
 	.projectCard {
-		max-width: 450px;
+		max-width: 480px;
+		height: 100%;
 		margin: 0 auto;
-		padding: 10px 0;
+		padding: 10px 10px 30px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		border: 1px solid red;
 
 		.directLinks {
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
-			padding: 0 5px;
+			justify-content: space-between;
+			padding: 0px 5px;
 
 			.faIcon {
 				font-size: 30px;
@@ -63,9 +71,24 @@ $secondary: #f1e9db;
 			justify-content: center;
 			text-align: center;
 			p {
-				padding: 5px 0;
+				padding: 20px 0px;
 			}
 		}
+	}
+}
+
+.skills {
+	padding: 10px 0;
+	font-size: 25px;
+	.tech {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		font-size: 85px;
+	}
+	.tech > * {
+		padding: 0px;
+		margin: 20px;
 	}
 }
 

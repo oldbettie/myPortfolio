@@ -7,6 +7,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Project from "../components/Project";
 import tictacdark from "../public/tictactoedark.png";
+import cookbook from "../public/cookbook.png";
+import petpals from "../public/petpals.png";
+import Skills from "../components/Skills";
 
 export default function Home() {
 	const [lightMode, setLightMode] = useState("Dark");
@@ -23,14 +26,15 @@ export default function Home() {
 			website: "https://jayleaton-cookbook.herokuapp.com/",
 			github: "https://github.com/oldbettie/cookbook",
 			btn: "Cookbook",
-			images: tictacdark,
+			images: cookbook,
 			about: "Recipe finder app utilizing RESTful best practices to build a CRUD app using Ruby on Rails, Heroku and Cloudinary ",
 		},
 		petPals: {
 			website: "https://project-2-5825e.web.app/",
 			github: "https://github.com/oldbettie/Project-2",
 			btn: "Petpals",
-			images: tictacdark,
+			images: petpals,
+			about: "Pet adoption site based on Tinder where u can swipe left or right on pets then communicate with the owner about adoption. built using React, FireBase, Framer Motion, Javascript and CSS Modules",
 		},
 	};
 
@@ -79,29 +83,49 @@ export default function Home() {
 					<Btn content={lightMode} onClick={onBtnClick} />
 				</div>
 				<hr className={styles.lineBreak} />
-				<div className={styles.myLinks}>
-					<a className="btnLink" href="https://github.com/oldbettie">
-						<FaGithub />
-					</a>
-					<a className="btnLink" href="mailto: jayleaton@gmail.com">
-						<MdEmail />
-					</a>
-					<a
-						className="btnLink"
-						href="https://www.linkedin.com/in/jayj-eaton/"
-					>
-						<FaLinkedin />
-					</a>
+				<div className={styles.subheader}>
+					<div className={styles.inPageJump}>
+						<a href="#projects" className="btnLink">
+							<h4>Projects</h4>
+						</a>
+						|
+						<a href="#skills" className="btnLink">
+							<h4>Skills</h4>
+						</a>
+					</div>
+					<div className={styles.myLinks}>
+						<a
+							className="btnLink"
+							href="https://github.com/oldbettie"
+						>
+							<FaGithub />
+						</a>
+						<a
+							className="btnLink"
+							href="mailto: jayleaton@gmail.com"
+						>
+							<MdEmail />
+						</a>
+						<a
+							className="btnLink"
+							href="https://www.linkedin.com/in/jayj-eaton/"
+						>
+							<FaLinkedin />
+						</a>
+					</div>
 				</div>
 				{/* start of main content */}
 				<div className={styles.mainContent}>
 					<div className={styles.projects}>
-						<Project content={projects.tictactoe} />
-						<Project content={projects.cookBook} />
 						<Project content={projects.petPals} />
+						<Project content={projects.cookBook} />
+						<Project content={projects.tictactoe} />
 					</div>
-					<div className={styles.skills}></div>
-					<div className={styles.resume}></div>
+					<hr />
+					<div className={styles.skills}>
+						<Skills />
+					</div>
+					<hr />
 					<div className={styles.about}></div>
 				</div>
 				{/* end of main content */}
