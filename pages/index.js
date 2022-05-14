@@ -10,6 +10,7 @@ import tictacdark from "../public/tictactoedark.png";
 import cookbook from "../public/cookbook.png";
 import petpals from "../public/petpals.png";
 import Skills from "../components/Skills";
+import About from "../components/About";
 
 export default function Home() {
 	const [lightMode, setLightMode] = useState("Dark");
@@ -77,7 +78,7 @@ export default function Home() {
 							<h1 className={styles.title}>JJ Eaton</h1>
 						</Link>
 						<p className={styles.description}>
-							&lt;Software Engineer/&gt;
+							&lt;Software Engineer /&gt;
 						</p>
 					</div>
 					<Btn content={lightMode} onClick={onBtnClick} />
@@ -91,6 +92,10 @@ export default function Home() {
 						|
 						<a href="#skills" className="btnLink">
 							<h4>Skills</h4>
+						</a>
+						|
+						<a href="#about" className="btnLink">
+							<h4>About</h4>
 						</a>
 					</div>
 					<div className={styles.myLinks}>
@@ -126,7 +131,10 @@ export default function Home() {
 						<Skills />
 					</div>
 					<hr />
-					<div className={styles.about}></div>
+					<div className={styles.about}>
+						<About />
+					</div>
+					<hr />
 				</div>
 				{/* end of main content */}
 			</div>
