@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Btn from "./Btn";
 import styles from "../styles/Home.module.scss";
 import { FaGithub } from "react-icons/fa";
