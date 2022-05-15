@@ -17,7 +17,8 @@ function Project({ content }) {
 			</div>
 			<div className={styles.cardContent}>
 				<p>{content.about}</p>
-				<Image src={content.images.src} width="400px" height="300px" />
+				<img src={content.images.src} alt="" />
+				{/* <Image src={content.images.src} width="400px" height="300px" /> */}
 			</div>
 		</div>
 	);
