@@ -46,8 +46,10 @@ $secondary: #f1e9db;
 .projects {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	.projectCard {
-		max-width: 480px;
+		min-width: 300px;
+		max-width: 550px;
 		height: 100%;
 		margin: 0 auto;
 		padding: 10px 10px 30px;
@@ -121,9 +123,20 @@ $secondary: #f1e9db;
 	font-size: 14px;
 }
 
-@media (max-width: 600px) {
-	.grid {
-		width: 100%;
-		flex-direction: column;
+@media (max-width: 550px) {
+	.subheader {
+		font-size: 16px;
+		.myLinks {
+			font-size: 30px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.subheader {
+		font-size: 12px;
+		.myLinks {
+			font-size: 25px;
+		}
 	}
 }
