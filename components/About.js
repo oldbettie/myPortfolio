@@ -9,8 +9,8 @@ function About() {
 			<div>
 				<p>
 					With 10 years of experience running and managing small
-					business's my problem solving skills have evolved to not
-					just find the best solution but also how to do it as
+					business&apos;s my problem solving skills have evolved to
+					not just find the best solution but also how to do it as
 					efficiently as possible.
 				</p>
 				<p>
