@@ -28,7 +28,7 @@ function About() {
 					personalities.
 				</p>
 				<hr className={styles.baseline} />
-				<h4>Current Hobbies:</h4>
+				<h4>Current Hobbies</h4>
 				<div className={styles.hobbies}>
 					<h6>&lt;Snowboarding /&gt;</h6>
 					<h6>&lt;Mountain Biking /&gt;</h6>

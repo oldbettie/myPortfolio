@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import Btn from "../components/Btn";
 import { useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Project from "../components/Project";
 import tictacdark from "../public/tictactoedark.png";
@@ -77,7 +77,18 @@ export default function Home() {
 							&lt;Software Engineer /&gt;
 						</p>
 					</div>
-					<Btn content={lightMode} onClick={onBtnClick} />
+					<div className={styles.navBtns}>
+						<a
+							href="resume.pdf"
+							alt="alt text"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Btn content="Resume" />
+						</a>
+
+						<Btn content={lightMode} onClick={onBtnClick} />
+					</div>
 				</div>
 				<hr className={styles.lineBreak} />
 				<div className={styles.subheader}>
