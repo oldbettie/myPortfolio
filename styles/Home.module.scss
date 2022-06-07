@@ -50,11 +50,28 @@ $secondary: #f1e9db;
 
 .projects {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
+	.moreProjects {
+		background: none;
+		text-decoration: none;
+		border: 2px solid $background;
+		padding: 8px 20px;
+		font-size: 16px;
+		border-radius: 15px;
+		color: $background;
+		width: 200px;
+		margin: 0 auto 30px;
+	}
+	.moreProjects:hover {
+		border: 2px solid $primary;
+		color: $primary;
+		cursor: pointer;
+	}
 	.projectCard {
 		min-width: 300px;
-		max-width: 680px;
+		max-width: 920px;
 		height: 100%;
 		margin: 0 auto;
 		padding: 10px 10px 30px;
@@ -67,7 +84,13 @@ $secondary: #f1e9db;
 			align-items: center;
 			justify-content: space-between;
 			padding: 0px 5px;
-
+			.leftBtns {
+				display: flex;
+				flex-direction: row;
+				a {
+					margin-right: 10px;
+				}
+			}
 			.faIcon {
 				font-size: 30px;
 			}
@@ -79,6 +102,11 @@ $secondary: #f1e9db;
 			text-align: center;
 			p {
 				padding: 20px 0px;
+			}
+
+			img {
+				width: 100%;
+				margin-top: 10px;
 			}
 		}
 	}
