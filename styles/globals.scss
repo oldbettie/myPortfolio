@@ -31,7 +31,8 @@ a {
 	background-color: $secondary;
 	color: $background;
 
-	.btn {
+	.btn,
+	button {
 		background: none;
 		text-decoration: none;
 		border: 2px solid $background;
@@ -55,7 +56,8 @@ a {
 	background-color: $background;
 	color: $secondary;
 
-	.btn {
+	.btn,
+	button {
 		background: none;
 		text-decoration: none;
 		border: 2px solid $secondary;

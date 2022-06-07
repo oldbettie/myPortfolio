@@ -17,6 +17,7 @@ export default function Home() {
 	const [lightMode, setLightMode] = useState("Dark");
 	const [classMode, setClassMode] = useState("light body");
 	const [active, setActive] = useState(false);
+	const [color, setColor] = useState("#07020d");
 	const projects = {
 		tictactoe: {
 			website: "https://oldbettie.github.io/tictactoe/",
@@ -48,13 +49,17 @@ export default function Home() {
 		},
 	};
 
+	// darkmode #f1e9db
+	// light #07020d
 	function onBtnClick() {
 		if (lightMode === "Light") {
 			setLightMode("Dark");
 			setClassMode(`light body`);
+			setColor("#07020d");
 		} else {
 			setLightMode("Light");
 			setClassMode(`dark body`);
+			setColor("#f1e9db");
 		}
 	}
 	return (
@@ -124,6 +129,7 @@ export default function Home() {
 						<Project content={projects.teamNotes} />
 						<Project content={projects.petPals} />
 						<button
+							style={{ color: color, border: `2px solid ${color}` }}
 							className={styles.moreProjects}
 							onClick={() => setActive(!active)}>
 							{!active ? "More Projects" : "Less Projects"}
