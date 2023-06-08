@@ -1,0 +1,25 @@
+name: Testing Build before merge to main
+
+# allows all branches to test the build
+on:
+  pull_request:
+    branches: []
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # adds all the env files to the build
+      - run: touch .env.local
+      - run: sleep 5
+      - run: echo NEXT_PUBLIC_EMAIL_URL=${{ secrets.NEXT_PUBLIC_EMAIL_URL }} >> .env.local
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
