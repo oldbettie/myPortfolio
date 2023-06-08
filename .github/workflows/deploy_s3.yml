@@ -5,8 +5,8 @@ on:
     branches: [ main ]
 
 #    FOR DEBUGGING UNCOMMENT THE PULL REQUEST LINES SO YOU CAN TEST IN A PR RATHER THEN MERGE
-  pull_request:
-    branches: []
+#  pull_request:
+#    branches: []
 
 
 jobs:
