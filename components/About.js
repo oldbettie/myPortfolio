@@ -13,10 +13,10 @@ function About() {
           solution but also how to do it as efficiently as possible.
         </p>
         <p>
-          I make a point of trying to learn one new thing per week even if its a
-          simple fact or a boring life hack, the world is built on change and
-          allowing the mind to still itself only slows us down on our path to
-          success.
+          I consider myself a "maker" someone that loves building and creation, I could be building the next big app,
+          a game, designing some new handy 3d printed components. I once built from the ground up a van life van with a
+          dream tech setup that I lived in while I traveled America for a year. I am someone that finds value in
+          learning and evolving even if it's the small things.
         </p>
         <p>
           My life experiences have taught me to keep my composure in tough
@@ -26,11 +26,11 @@ function About() {
           different personalities.
         </p>
         <hr className={styles.baseline} />
-        <h4>Current Hobbies</h4>
+        <h4>Hobbies</h4>
         <div className={styles.hobbies}>
           <h6>&lt;Snowboarding /&gt;</h6>
           <h6>&lt;Mountain Biking /&gt;</h6>
-          <h6>&lt;Videogames /&gt;</h6>
+          <h6>&lt;Gaming /&gt;</h6>
           <h6>&lt;Coding /&gt;</h6>
           <h6>&lt;Travel /&gt;</h6>
         </div>
