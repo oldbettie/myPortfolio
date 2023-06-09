@@ -6,11 +6,14 @@
 		"dev": "next dev",
 		"build": "next build && next export",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"prettier-check": "prettier --check ./components ./pages",
+		"prettier-fix": "prettier --write ./components ./pages"
 	},
 	"dependencies": {
 		"firebase": "^9.8.1",
 		"next": "12.2.4",
+		"prettier": "^2.8.8",
 		"react": "18.1.0",
 		"react-dom": "18.1.0",
 		"react-icons": "^4.3.1",

@@ -12,7 +12,7 @@ $secondary: #f1e9db;
 	justify-content: space-between;
 	align-items: center;
 	.headerTitle {
-		margin: 10px 0px;
+		margin: 10px 0;
 	}
 	.navBtns {
 		display: flex;
@@ -43,7 +43,7 @@ $secondary: #f1e9db;
 		display: flex;
 		justify-content: flex-end;
 		a {
-			padding: 5px 0px 0px 0px;
+			padding: 5px 0 0 0;
 		}
 	}
 }
@@ -53,6 +53,28 @@ $secondary: #f1e9db;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	.latestUpdate {
+		max-width: 880px;
+		margin: 20px auto;
+
+		span {
+			font-weight: 800;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+
+		a:hover {
+			color: $primary;
+		}
+
+		.list {
+			padding: 0 15px;
+		}
+	}
+
 	.moreProjects {
 		background: none;
 		text-decoration: none;
@@ -83,7 +105,7 @@ $secondary: #f1e9db;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding: 0px 5px;
+			padding: 0 5px;
 			.leftBtns {
 				display: flex;
 				flex-direction: row;
@@ -101,7 +123,7 @@ $secondary: #f1e9db;
 			justify-content: center;
 			text-align: center;
 			p {
-				padding: 20px 0px;
+				padding: 20px 0;
 			}
 
 			img {
@@ -122,7 +144,7 @@ $secondary: #f1e9db;
 		font-size: 85px;
 	}
 	.tech > * {
-		padding: 0px;
+		padding: 0;
 		margin: 20px;
 	}
 }
@@ -176,3 +198,4 @@ $secondary: #f1e9db;
 		}
 	}
 }
+
