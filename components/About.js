@@ -13,10 +13,12 @@ function About() {
           solution but also how to do it as efficiently as possible.
         </p>
         <p>
-          I consider myself a "maker" someone that loves building and creation, I could be building the next big app,
-          a game, designing some new handy 3d printed components. I once built from the ground up a van life van with a
-          dream tech setup that I lived in while I traveled America for a year. I am someone that finds value in
-          learning and evolving even if it's the small things.
+          I consider myself a "maker" someone that loves building and creation,
+          I could be building the next big app, a game, designing some new handy
+          3d printed components. I once built from the ground up a van life van
+          with a dream tech setup that I lived in while I traveled America for a
+          year. I am someone that finds value in learning and evolving even if
+          it's the small things.
         </p>
         <p>
           My life experiences have taught me to keep my composure in tough

@@ -88,11 +88,7 @@ export default function Home() {
             <p>&lt;Software Engineer /&gt;</p>
           </div>
           <div className={styles.navBtns}>
-            <a
-              href="resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
               <Btn content="Resume" />
             </a>
 
@@ -134,26 +130,39 @@ export default function Home() {
           <div className={styles.projects} id="projects">
             <div className={styles.latestUpdate}>
               <p>
-                <span>Please note </span> this has not been updated in some time and although I do plan on updating it at
-                some point. To see what I am currently working on you can checkout my{" "}
-                <a href="https://github.com/oldbettie">github</a> or see my latest work at{" "}
-                <a href="https://www.globalpoker.com">www.globalpoker.com</a>  you will need a vpn to access the site and I
-                cannot share any of the code base as it is company policy.
+                <span>Please note </span> this has not been updated in some time
+                and although I do plan on updating it at some point. To see what
+                I am currently working on you can checkout my{" "}
+                <a href="https://github.com/oldbettie">github</a> or see my
+                latest work at{" "}
+                <a href="https://www.globalpoker.com">www.globalpoker.com</a>{" "}
+                you will need a vpn to access the site and I cannot share any of
+                the code base as it is company policy.
               </p>
               <p className={styles.latestUpdate}>
                 Some production code I have contributed to include:
               </p>
               <ul className={styles.list}>
-                <li>Ring Master - Casino slots game built from scratch in Pixi.js.</li>
-                <li>Hand Counter - Read Modal that tracks the count of hands a user has played of poker.</li>
-                <li>Library Adjustments - Updating the React game-client website.</li>
                 <li>
-                  <a href="https://globalpokeracademy.com/">Global Poker Academy</a> - A new blog format website to
-                  help players better learn poker.
+                  Ring Master - Casino slots game built from scratch in Pixi.js.
                 </li>
                 <li>
-                  Poker Only Downtime - Adjust the website to allow all other services to remain available
-                  when poker is under maintenance.
+                  Hand Counter - Read Modal that tracks the count of hands a
+                  user has played of poker.
+                </li>
+                <li>
+                  Library Adjustments - Updating the React game-client website.
+                </li>
+                <li>
+                  <a href="https://globalpokeracademy.com/">
+                    Global Poker Academy
+                  </a>{" "}
+                  - A new blog format website to help players better learn
+                  poker.
+                </li>
+                <li>
+                  Poker Only Downtime - Adjust the website to allow all other
+                  services to remain available when poker is under maintenance.
                 </li>
               </ul>
             </div>
