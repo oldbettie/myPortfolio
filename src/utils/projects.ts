@@ -3,14 +3,14 @@ import cookbook from "../../public/cookbook.png";
 import petpals from "../../public/petpals.png";
 import pricemates from "../../public/pricemates.png";
 import teamnotes from "../../public/teamnotes.png";
-import { StaticImageData } from "next/image"
+import { StaticImageData } from "next/image";
 
 export interface Project {
-  website: string
-  github: string | null
-  btn: string
-  image: StaticImageData
-  about: string
+  website: string;
+  github: string | null;
+  btn: string;
+  image: StaticImageData;
+  about: string;
 }
 
 const projects: Project[] = [
@@ -52,6 +52,6 @@ const projects: Project[] = [
     btn: "<Pricemates />",
     image: pricemates,
     about:
-      "Pricemates is my current work and represents a micro SaaS idea I came up with to help people save money"
-  }
-]
+      "Pricemates is my current work and represents a micro SaaS idea I came up with to help people save money",
+  },
+];
