@@ -3,11 +3,7 @@
     "react/no-unescaped-entities": 0,
     "semi": ["error", "never"],
     "keyword-spacing": ["error", { "after": true }],
-    "quotes": [
-      "error",
-      "double",
-      { "avoidEscape": true, "allowTemplateLiterals": true }
-    ]
+    "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
   },
-  "extends": ["next/core-web-vitals", "eslint-config-prettier"]
+  "extends": "next/core-web-vitals"
 }

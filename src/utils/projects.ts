@@ -1,16 +1,16 @@
-import tictacdark from "../../public/tictactoedark.png";
-import cookbook from "../../public/cookbook.png";
-import petpals from "../../public/petpals.png";
-import pricemates from "../../public/pricemates.png";
-import teamnotes from "../../public/teamnotes.png";
-import { StaticImageData } from "next/image";
+import tictacdark from "../../public/tictactoedark.png"
+import cookbook from "../../public/cookbook.png"
+import petpals from "../../public/petpals.png"
+import pricemates from "../../public/pricemates.png"
+import teamnotes from "../../public/teamnotes.png"
+import { StaticImageData } from "next/image"
 
 export interface Project {
-  website: string;
-  github: string | null;
-  btn: string;
-  image: StaticImageData;
-  about: string;
+  website: string
+  github: string | null
+  btn: string
+  image: StaticImageData
+  about: string
 }
 
 const projects: Project[] = [
@@ -19,8 +19,7 @@ const projects: Project[] = [
     github: "https://github.com/oldbettie/tictactoe",
     btn: "<Tictactoe />",
     image: tictacdark,
-    about:
-      "Simple tictactoe game using basic JS and jQuery with added light/dark mode button. ",
+    about: "Simple tictactoe game using basic JS and jQuery with added light/dark mode button. ",
   },
   {
     website: "https://jayleaton-cookbook.herokuapp.com/",
@@ -51,7 +50,6 @@ const projects: Project[] = [
     github: null,
     btn: "<Pricemates />",
     image: pricemates,
-    about:
-      "Pricemates is my current work and represents a micro SaaS idea I came up with to help people save money",
+    about: "Pricemates is my current work and represents a micro SaaS idea I came up with to help people save money",
   },
-];
+]

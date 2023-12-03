@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export const APP_COLORS = {
   background: "#24262A",
@@ -9,7 +9,7 @@ export const APP_COLORS = {
   font_highlight: "#FBFF33",
   font_header: "#E2E2E2",
   logo: "#1F2023",
-};
+}
 
 const config: Config = {
   content: [
@@ -26,13 +26,13 @@ const config: Config = {
         ...APP_COLORS,
       },
       fontFamily: {
-        code: ["Source Code Pro", "mono space"],
-        interface: ["Inter", "sans-serif"],
+        "code": ["Source Code Pro", "mono space"],
+        "interface": ["Inter", "sans-serif"],
         "console-bold": ["Inconsolata-Bold", "sans-serif"],
-        console: ["Inconsolata", "sans-serif"],
+        "console": ["Inconsolata", "sans-serif"],
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config

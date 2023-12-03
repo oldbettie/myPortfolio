@@ -11,9 +11,9 @@ const nextConfig = {
           name: "[path][name].[ext]",
         },
       },
-    });
-    return config;
+    })
+    return config
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
