@@ -1,14 +1,5 @@
-import styles from "../styles/Home.module.scss";
-import { FaGithub } from "react-icons/fa";
-import {
-  DiCss3,
-  DiHtml5,
-  DiReact,
-  DiRuby,
-  DiSass,
-  DiNodejs,
-  DiJava,
-} from "react-icons/di";
+import { FaGithub, FaStripe, FaDocker } from "react-icons/fa"
+import { DiCss3, DiHtml5, DiReact, DiRuby, DiSass, DiNodejs, DiJava } from "react-icons/di"
 import {
   SiNextdotjs,
   SiExpress,
@@ -29,15 +20,18 @@ import {
   SiAuth0,
   SiJira,
   SiCircleci,
-} from "react-icons/si";
-
-function Skills() {
+} from "react-icons/si"
+import { TbBrandSupabase } from "react-icons/tb"
+export function Skills() {
   return (
-    <div className={styles.skills}>
-      <h4 id="skills">Skills</h4>
-      <div className={styles.tech}>
+    <div id="Skills" className="py-5">
+      <h2 className="text-[45px] font-code text-font_light mb-10">Skills</h2>
+      <div className="flex flex-wrap justify-center gap-6 md:text-[76px] text-[55px] text-font_main my-5">
+        <TbBrandSupabase />
         <FaGithub />
         <SiJavascript />
+        <FaDocker />
+        <FaStripe />
         <DiCss3 />
         <DiHtml5 />
         <DiReact />
@@ -65,7 +59,5 @@ function Skills() {
         <SiCircleci />
       </div>
     </div>
-  );
+  )
 }
-
-export default Skills;
