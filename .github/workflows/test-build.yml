@@ -1,4 +1,4 @@
-name: Testing Build before merge to main
+name: Prettier & Build Check
 
 # allows all branches to test the build
 on:
