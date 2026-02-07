@@ -49,27 +49,35 @@ export function Navigation() {
 
   if (isDesktop) {
     return (
-      <div className="flex w-full justify-between text-center pt-5">
-        <h1 className="font-interface text-4xl text-font_main">JJ Eaton</h1>
+      <div className="flex w-full justify-between items-center py-6">
+        <h1 className="font-interface text-3xl font-bold text-white tracking-tight">
+          JJ <span className="text-font_highlight">Eaton</span>
+        </h1>
         <div className="w-fit">
-          <div className="text-right lg:space-x-6 space-x-2 pl-5 text-[16px]">
+          <div className="text-right lg:space-x-8 space-x-4 pl-5 text-[16px] flex items-center">
             <Button
               path="#Projects"
-              className={`font-code ${activeSection === NavSections.PROJECTS ? "text-font_highlight" : "#FFF"}`}
+              className={`font-code transition-colors hover:text-font_highlight ${
+                activeSection === NavSections.PROJECTS ? "text-font_highlight" : "text-font_light"
+              }`}
               click={() => setActiveSection(NavSections.PROJECTS)}
             >
               {activeSection === NavSections.PROJECTS ? `< Projects />` : `Projects`}
             </Button>
             <Button
               path="#Skills"
-              className={`font-code ${activeSection === NavSections.SKILLS ? "text-font_highlight" : "#FFF"}`}
+              className={`font-code transition-colors hover:text-font_highlight ${
+                activeSection === NavSections.SKILLS ? "text-font_highlight" : "text-font_light"
+              }`}
               click={() => setActiveSection(NavSections.SKILLS)}
             >
               {activeSection === NavSections.SKILLS ? `< Skills />` : `Skills`}
             </Button>
             <Button
               path="#About"
-              className={`font-code ${activeSection === NavSections.ABOUT ? "text-font_highlight" : "#FFF"}`}
+              className={`font-code transition-colors hover:text-font_highlight ${
+                activeSection === NavSections.ABOUT ? "text-font_highlight" : "text-font_light"
+              }`}
               click={() => setActiveSection(NavSections.ABOUT)}
             >
               {activeSection === NavSections.ABOUT ? `< About />` : `About`}
@@ -77,7 +85,9 @@ export function Navigation() {
             <Button
               path="resume.pdf"
               target="_blank"
-              className={`font-code ${activeSection === NavSections.RESUME ? "text-font_highlight" : "#FFF"}`}
+              className={`font-code transition-colors hover:text-font_highlight ${
+                activeSection === NavSections.RESUME ? "text-font_highlight" : "text-font_light"
+              }`}
               click={() => setActiveSection(NavSections.RESUME)}
             >
               {activeSection === NavSections.RESUME ? `< Resume />` : `Resume`}
@@ -85,23 +95,23 @@ export function Navigation() {
           </div>
         </div>
 
-        <div className="flex gap-5">
-          <Button path="https://github.com/oldbettie" target="_blank">
-            <div className="flex justify-center items-center gap-3">
-              <FaGithub className="text-2xl" />
-              Github
+        <div className="flex gap-4">
+          <Button path="https://github.com/oldbettie" target="_blank" className="hover:text-white text-font_light transition-colors">
+            <div className="flex justify-center items-center gap-2">
+              <FaGithub className="text-xl" />
+              <span className="hidden lg:inline">Github</span>
             </div>
           </Button>
-          <Button path="https://www.linkedin.com/in/jayj-eaton" target="_blank">
-            <div className="flex justify-center items-center gap-3">
-              <FaLinkedin className="text-2xl" />
-              Linkedin
+          <Button path="https://www.linkedin.com/in/jayj-eaton" target="_blank" className="hover:text-blue-400 text-font_light transition-colors">
+            <div className="flex justify-center items-center gap-2">
+              <FaLinkedin className="text-xl" />
+              <span className="hidden lg:inline">Linkedin</span>
             </div>
           </Button>
-          <Button path="https://www.upwork.com/freelancers/~01bb2932f2d3e396a6" target="_blank">
-            <div className="flex justify-center items-center gap-3">
-              <BiLogoUpwork className="text-3xl" />
-              Upwork
+          <Button path="https://www.upwork.com/freelancers/~01bb2932f2d3e396a6" target="_blank" className="hover:text-green-400 text-font_light transition-colors">
+            <div className="flex justify-center items-center gap-2">
+              <BiLogoUpwork className="text-2xl" />
+              <span className="hidden lg:inline">Upwork</span>
             </div>
           </Button>
         </div>

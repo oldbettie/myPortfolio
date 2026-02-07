@@ -15,6 +15,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    website: "https://doriracers.com",
+    github: null,
+    name: "<Doriracers />",
+    image: "/dori.png",
+    about:
+      "Doriracers is the social platform for automotive enthusiasts to find and share their favorite car races and events. It is built on Next.js and the new app router along with supabase and postgres.",
+    stack: [TbBrandSupabase, SiNextdotjs, SiTypescript, FaAws, FaDocker],
+  },
+  {
     website: "https://pricemates.net",
     github: null,
     name: "<Pricemates />",

@@ -1,14 +1,14 @@
 import type { Config } from "tailwindcss"
 
 export const APP_COLORS = {
-  background: "#24262A",
-  background_highlight: "#2D2E32",
-  font_main: "#969696",
-  font_light: "#B9B9B9",
-  font_dark: "#6C6D73",
-  font_highlight: "#FBFF33",
-  font_header: "#E2E2E2",
-  logo: "#1F2023",
+  background: "#0f172a", // Slate 900
+  background_highlight: "#1e293b", // Slate 800
+  font_main: "#94a3b8", // Slate 400
+  font_light: "#cbd5e1", // Slate 300
+  font_dark: "#475569", // Slate 600
+  font_highlight: "#2dd4bf", // Teal 400
+  font_header: "#f1f5f9", // Slate 100
+  logo: "#020617", // Slate 950
 }
 
 const config: Config = {
